@@ -153,7 +153,7 @@
       font-size: 1.02rem; color: var(--text-muted); max-width: 720px; font-weight: 400; line-height: 1.8; margin: 0 auto;
     }
 
-    /* ================= SAUBHAGYA GHAR MINIMALIST NAVBAR ================= */
+    /* ================= NAVBAR ================= */
     .navbar-capsule {
       position: fixed; top: 16px; left: 50%; transform: translateX(-50%); width: 96%; max-width: 1240px;
       background: var(--nav-bg); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
@@ -608,7 +608,7 @@
 </head>
 <body>
 
-  <!-- Reading Progress Bar -->
+  <!-- Top Scroll Reading Progress Indicator -->
   <div id="scrollProgressBar"></div>
 
   <!-- Saubhagya Ghar-Style Capsule Navbar -->
@@ -706,7 +706,7 @@
     </div>
   </section>
 
-  <!-- ================= SAUBHAGYA GHAR STYLE PACKAGES & BOQ TOOLKIT ================= -->
+  <!-- ================= DYNAMIC PACKAGES & BOQ TOOLKIT ================= -->
   <section class="section" id="packages">
     <div class="container">
       <div class="section-header text-center">
@@ -715,7 +715,8 @@
         <p class="section-subtitle">Choose the perfect package for your needs—from basic estimation takeoffs to complete 3D virtual walkthroughs.</p>
       </div>
 
-      <div class="packages-grid">
+      <!-- DYNAMIC PACKAGES CONTAINER (SYNCED WITH GOOGLE SHEET 'Packages' TAB) -->
+      <div class="packages-grid" id="packagesContainer">
         <!-- Package 1 -->
         <div class="package-card">
           <div>
@@ -1320,63 +1321,6 @@
     </div>
   </section>
 
-  <!-- ================= WRITTEN ESTIMATE CALLOUT ================= -->
-  <div class="container" style="margin-bottom: 2rem;">
-    <div class="estimate-callout-banner">
-      <div>
-        <h3>Plan Your Build With a Written Estimate</h3>
-        <p>Share your property details and architectural priorities. We'll review the scope and prepare a comprehensive itemized takeoff.</p>
-      </div>
-      <a href="#contact" class="btn btn-primary" style="background: #ffffff; color: #101215;">Request a Written Estimate <i class="fa-solid fa-file-signature"></i></a>
-    </div>
-  </div>
-
-  <!-- ================= TESTIMONIALS (SAUBHAGYA GHAR STYLE) ================= -->
-  <section class="section" style="background: var(--bg-surface-elevated); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
-    <div class="container">
-      <div class="section-header text-center">
-        <div class="tag-badge"><span class="dot"></span> Verified Client Reviews</div>
-        <h2 class="section-title">What Our Clients Say About <em>Scale &amp; Spaces</em></h2>
-        <p class="section-subtitle">Real feedback from residential, institutional, and commercial property owners across Nepal.</p>
-      </div>
-
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <p>"Scale and Spaces handled our multi-storey building project with extreme engineering precision. Their structural drawings passed municipal scrutiny on the first attempt, and the BOQ estimate saved us from significant contractor inflation."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">PA</div>
-            <div>
-              <strong style="color: var(--text-main); font-size: 0.95rem;">Mr. Prakash Amatya</strong>
-              <div style="font-size: 0.8rem; color: var(--color-grey);">Residential Villa Client • Birgunj</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <p>"The 3D photorealistic visualization and 360° virtual reality tours allowed our committee to review every hospital ward before physical construction. Er. Chetan and the team are technically brilliant."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">BK</div>
-            <div>
-              <strong style="color: var(--text-main); font-size: 0.95rem;">Mr. Bidur Khatiwada</strong>
-              <div style="font-size: 0.8rem; color: var(--color-grey);">Hospital Project • Tokha, Kathmandu</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <p>"Finding a firm that seamlessly integrates architectural beauty with structural civil engineering under NBC 205 is rare in Nepal. Scale &amp; Spaces is the best team we have worked with."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">KA</div>
-            <div>
-              <strong style="color: var(--text-main); font-size: 0.95rem;">Mr. Kamlesh Agarwal</strong>
-              <div style="font-size: 0.8rem; color: var(--color-grey);">Commercial Complex • Parsa</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ================= DEDICATED FAQS SECTION (DYNAMIC ACCORDION) ================= -->
   <section class="section" id="faq">
     <div class="container">
@@ -1442,7 +1386,7 @@
     </div>
   </div>
 
-  <!-- Corporate Multi-Column Footer (Saubhagya Ghar Style) -->
+  <!-- Corporate Multi-Column Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
@@ -1821,21 +1765,6 @@
       document.getElementById('septicBreakdown').textContent = `Liquid Volume: ~${Math.round(u * 300)} Liters`;
     }
 
-    // ================= BOQ ESTIMATOR =================
-    function calculateFullBOQ() {
-      const scope = document.getElementById('boqScope').value;
-      const area = parseInt(document.getElementById('boqArea').value, 10) || 350;
-      document.getElementById('boqAreaDisplay').textContent = `${area} sq.ft`;
-      const min = scope === 'tier1' ? 25 : scope === 'tier2' ? 65 : 1600;
-      const max = scope === 'tier1' ? 45 : scope === 'tier2' ? 110 : 2800;
-      document.getElementById('boqPriceOut').textContent = `Rs. ${(area * min).toLocaleString()} – ${(area * max).toLocaleString()}`;
-    }
-
-    function exportFullBOQToWhatsApp() {
-      const a = document.getElementById('boqArea').value, p = document.getElementById('boqPriceOut').textContent;
-      window.open(`https://wa.me/9779703881733?text=*BOQ Inquiry - Scale and Spaces*%0A*Area:* ${a} sq.ft%0A*Investment:* ${encodeURIComponent(p)}`, '_blank');
-    }
-
     // ================= RESILIENT GOOGLE SHEETS LIVE SYNC =================
     function fetchSheetJSONP(sheetId, tabName) {
       return new Promise((resolve) => {
@@ -1869,6 +1798,47 @@
     }
 
     async function loadGoogleSheetLiveSync(sheetId) {
+      // 0. Dynamic Packages Sync (from 'Packages' Tab)
+      try {
+        const pkgRows = await fetchGoogleTab(sheetId, 'Packages');
+        if (pkgRows && pkgRows.length > 0) {
+          const valid = pkgRows.filter((r, idx) => {
+            if (idx === 0 && /^(tier|package|name)/i.test(String(r[0] || r[1]).trim())) return false;
+            return (r[0] || r[1]) && String(r[0] || r[1]).trim() !== '';
+          });
+
+          if (valid.length > 0) {
+            document.getElementById('packagesContainer').innerHTML = valid.map(row => {
+              const badge = row[0] || 'Package';
+              const name = row[1] || 'Design Tier';
+              const price = row[2] || 'Contact Us';
+              const desc = row[3] || '';
+              const features = (row[4] || '').split(',').map(f => f.trim()).filter(Boolean);
+              const isPopular = String(row[5] || '').toLowerCase().includes('yes');
+
+              const featureListHtml = features.map(f => `<li><i class="fa-solid fa-check"></i> ${f}</li>`).join('');
+              const popularBadgeHtml = isPopular ? `<div class="package-badge">Most Popular</div>` : '';
+
+              return `
+                <div class="package-card ${isPopular ? 'popular' : ''}">
+                  ${popularBadgeHtml}
+                  <div>
+                    <span class="tag-badge" style="margin-bottom:0.5rem;"><span class="dot"></span> ${badge}</span>
+                    <h3>${name}</h3>
+                    <div class="package-price">${price}</div>
+                    <p style="font-size:0.88rem; color:var(--text-muted);">${desc}</p>
+                    <ul class="package-features">
+                      ${featureListHtml}
+                    </ul>
+                  </div>
+                  <a href="https://wa.me/9779703881733?text=Hi%20Scale%20and%20Spaces,%20I%20am%20interested%20in%20the%20${encodeURIComponent(name)}%20(${encodeURIComponent(price)})." target="_blank" class="btn ${isPopular ? 'btn-primary' : 'btn-outline'}">Request Package</a>
+                </div>
+              `;
+            }).join('');
+          }
+        }
+      } catch (e) {}
+
       // 1. Hero & SEO Meta
       try {
         const heroRows = await fetchGoogleTab(sheetId, 'Hero');
@@ -1924,7 +1894,7 @@
         }
       } catch (e) {}
 
-      // 3. Dedicated Team Tab (Dynamic Row Scaling)
+      // 3. Dedicated Team Tab
       try {
         const t = await fetchGoogleTab(sheetId, 'Team');
         if (t && t.length > 0) {
@@ -1945,7 +1915,7 @@
         }
       } catch (e) {}
 
-      // 4. Dedicated FAQs Tab (Dynamic Accordion Rows)
+      // 4. Dedicated FAQs Tab
       try {
         const f = await fetchGoogleTab(sheetId, 'FAQs');
         if (f && f.length > 0) {
