@@ -7,7 +7,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="format-detection" content="telephone=no" />
 
-  <!-- ================= STRICT SEO META TAGS ================= -->
+  <!-- ================= SEO META TAGS ================= -->
   <title>Scale and Spaces Pvt. Ltd. | Architecture, Interior Design & Engineering</title>
   <meta name="description" content="Scale and Spaces Pvt. Ltd. is the premier architecture, civil engineering, interior design, and turnkey construction firm in Kathmandu and Birgunj, Nepal." />
   <meta name="keywords" content="architecture firm kathmandu, interior designer birgunj, civil engineering nepal, scale and spaces pvt ltd, nbc 205 building design, 3d visualization" />
@@ -52,17 +52,17 @@
   <style>
     /* ================= PALETTE: GREY, BLACK & CREAM WHITE ================= */
     :root, [data-theme="light"] {
-      --bg-canvas: #faf7f2;               /* Rich Cream White */
-      --bg-surface: #ffffff;              /* Pure White */
-      --bg-surface-elevated: #f0ece3;     /* Warm Architectural Grey-Cream */
-      --color-black: #101215;             /* Deep Pitch Black */
-      --color-grey-dark: #22262b;         /* Charcoal Grey */
-      --color-grey: #64748b;              /* Slate Mid Grey */
-      --color-grey-light: #e2e8f0;        /* Subtle Border Grey */
-      --accent-navy: #0e273f;             /* Deep Accent */
-      --accent-azure: #1b5291;            /* Technical Azure */
-      --text-main: #0f1216;               /* Contrast Pitch Black */
-      --text-muted: #505a67;              /* Architectural Grey */
+      --bg-canvas: #faf7f2;
+      --bg-surface: #ffffff;
+      --bg-surface-elevated: #f0ece3;
+      --color-black: #101215;
+      --color-grey-dark: #22262b;
+      --color-grey: #64748b;
+      --color-grey-light: #e2e8f0;
+      --accent-navy: #0e273f;
+      --accent-azure: #1b5291;
+      --text-main: #0f1216;
+      --text-muted: #505a67;
       --border-subtle: rgba(16, 18, 21, 0.08);
       --border-strong: rgba(16, 18, 21, 0.22);
       --nav-bg: rgba(250, 247, 242, 0.94);
@@ -72,16 +72,16 @@
     }
 
     [data-theme="dark"] {
-      --bg-canvas: #0a0c0e;               /* Deep Obsidian Black */
-      --bg-surface: #121519;              /* Charcoal Surface */
-      --bg-surface-elevated: #181d23;     /* Elevated Dark Grey */
-      --color-black: #ffffff;             /* Inverted White */
+      --bg-canvas: #0a0c0e;
+      --bg-surface: #121519;
+      --bg-surface-elevated: #181d23;
+      --color-black: #ffffff;
       --color-grey-dark: #e2e8f0;
       --color-grey: #94a3b8;
       --color-grey-light: rgba(255, 255, 255, 0.1);
       --accent-navy: #1b5291;
       --accent-azure: #38bdf8;
-      --text-main: #f5f2ea;               /* Cream White Text */
+      --text-main: #f5f2ea;
       --text-muted: #9aa4b0;
       --border-subtle: rgba(255, 255, 255, 0.08);
       --border-strong: rgba(255, 255, 255, 0.25);
@@ -153,7 +153,7 @@
       font-size: 1.02rem; color: var(--text-muted); max-width: 720px; font-weight: 400; line-height: 1.8; margin: 0 auto;
     }
 
-    /* ================= NAVBAR ================= */
+    /* Navbar */
     .navbar-capsule {
       position: fixed; top: 16px; left: 50%; transform: translateX(-50%); width: 96%; max-width: 1240px;
       background: var(--nav-bg); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
@@ -195,7 +195,7 @@
     .btn-outline { border: 1px solid var(--border-strong); color: var(--text-main); background: var(--bg-surface); }
     .btn-outline:hover { background: var(--bg-surface-elevated); transform: translateY(-2px); }
 
-    /* ================= HERO SECTION ================= */
+    /* Hero */
     .hero-section {
       min-height: 85vh; min-height: 85dvh; display: flex; flex-direction: column; justify-content: center;
       align-items: center; text-align: center; padding: clamp(6.5rem, 12vw, 9rem) 1.5rem 3.5rem; position: relative;
@@ -211,11 +211,8 @@
     .hero-trust-bar span { display: flex; align-items: center; gap: 0.5rem; }
     .hero-trust-bar span i { color: var(--text-main); }
 
-    /* ================= SAUBHAGYA STYLE "CHOOSE YOUR PATH" CARDS ================= */
-    .path-cards-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 1.8rem; margin-top: 3.5rem;
-    }
+    /* Choose Your Path */
+    .path-cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.8rem; margin-top: 3.5rem; }
     .path-card {
       background: var(--bg-surface); border: 1px solid var(--border-subtle);
       border-radius: var(--radius-lg); padding: 2.2rem; box-shadow: var(--shadow-sm);
@@ -229,11 +226,8 @@
     .path-card h3 { font-size: 1.35rem; margin-bottom: 0.6rem; color: var(--text-main); }
     .path-card p { font-size: 0.92rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem; }
 
-    /* ================= SAUBHAGYA STYLE INSPECTION & BOQ PACKAGES ================= */
-    .packages-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-      gap: 1.8rem; margin-top: 3.5rem;
-    }
+    /* Packages */
+    .packages-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 1.8rem; margin-top: 3.5rem; }
     .package-card {
       background: var(--bg-surface); border: 1px solid var(--border-subtle);
       border-radius: var(--radius-lg); padding: 2.4rem 2rem; box-shadow: var(--shadow-sm);
@@ -249,7 +243,7 @@
     .package-features li { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.6rem; }
     .package-features li i { color: #25D366; font-size: 0.8rem; }
 
-    /* ================= ABOUT SECTION ================= */
+    /* About Section */
     .grid-about-unboxed { display: grid; grid-template-columns: 1fr 1.25fr; gap: clamp(2.5rem, 5vw, 4.5rem); align-items: center; }
     .portrait-standalone-wrap { position: relative; display: flex; justify-content: center; align-items: center; }
     .portrait-ambient-glow {
@@ -280,7 +274,7 @@
     }
     .skill-tag span { color: var(--accent-azure); font-weight: 700; font-family: var(--font-mono); font-size: 0.72rem; }
 
-    /* ================= DEDICATED TEAM ================= */
+    /* Team */
     .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; margin-top: 3rem; }
     .team-card {
       background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);
@@ -292,7 +286,7 @@
     .team-role { font-family: var(--font-mono); font-size: 0.76rem; color: var(--accent-azure); text-transform: uppercase; margin-bottom: 0.7rem; font-weight: 600; }
     .team-bio { font-size: 0.86rem; color: var(--text-muted); line-height: 1.6; }
 
-    /* ================= CONTINUOUS DESIGN REEL ================= */
+    /* Continuous Reel */
     .posts-marquee-section {
       background: var(--bg-surface-elevated); border-top: 1px solid var(--border-subtle);
       border-bottom: 1px solid var(--border-subtle); padding: 3.5rem 0; overflow: hidden;
@@ -314,7 +308,7 @@
     .floating-post-title { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.3rem; }
     .floating-post-caption { font-size: 0.82rem; color: var(--text-muted); }
 
-    /* ================= ROOM & PROJECT BOQ TOOLKIT ================= */
+    /* BOQ Toolkit */
     .boq-toolkit-card {
       background: var(--bg-surface); border: 1px solid var(--border-strong);
       border-radius: var(--radius-lg); padding: clamp(2rem, 5vw, 4rem);
@@ -351,7 +345,7 @@
     }
     @media (max-width: 600px) { .boq-itemized-list { grid-template-columns: 1fr; } }
 
-    /* ================= BEFORE/AFTER TRANSFORMATION ================= */
+    /* Before/After */
     .before-after-container {
       max-width: 980px; margin: 3rem auto 0; position: relative; border-radius: var(--radius-lg);
       overflow: hidden; border: 1px solid var(--border-strong); box-shadow: var(--shadow-md);
@@ -378,7 +372,7 @@
     .ba-badge-left { left: 16px; }
     .ba-badge-right { right: 16px; }
 
-    /* ================= STUDIO HUB ================= */
+    /* Studio Hub */
     .hub-container {
       max-width: 1080px; margin: 3rem auto 0; background: var(--bg-surface);
       border: 1px solid var(--border-strong); border-radius: var(--radius-lg);
@@ -420,7 +414,7 @@
     .calc-output-val { font-family: var(--font-display); font-size: clamp(1.5rem, 4vw, 2.1rem); color: var(--text-main); font-weight: 800; line-height: 1.2; margin-bottom: 0.4rem; }
     .calc-breakdown-list { font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; }
 
-    /* ================= PORTFOLIO CAROUSEL ================= */
+    /* Portfolio */
     .slider-section { background: var(--bg-surface-elevated); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); }
     .slider-controls-top { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem; }
     .slider-buttons { display: flex; gap: 0.6rem; }
@@ -446,7 +440,7 @@
     .slide-desc { padding: 1.6rem; }
     .slide-tag { font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-azure); font-weight: 600; text-transform: uppercase; }
 
-    /* ================= SHOWCASE (REELS & 360) ================= */
+    /* Showcase */
     .showcase-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.8rem; margin-top: 3rem; }
     .showcase-card {
       background: var(--bg-surface); border: 1px solid var(--border-subtle);
@@ -469,7 +463,7 @@
     .item-title { font-family: var(--font-display); font-size: 1.3rem; color: var(--text-main); margin-bottom: 0.5rem; font-weight: 700; }
     .showcase-body p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.2rem; }
 
-    /* ================= CLIENT RESOURCE HUB ================= */
+    /* Resources */
     .resource-tabs { display: flex; justify-content: center; gap: 0.6rem; margin-top: 2.5rem; flex-wrap: wrap; }
     .resource-panel { display: none; margin-top: 2.5rem; }
     .resource-panel.active { display: block; animation: panelFade 0.3s ease; }
@@ -496,7 +490,7 @@
     .article-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
     .article-content { padding: 1.6rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; }
 
-    /* ================= WRITTEN ESTIMATE CALLOUT BANNER ================= */
+    /* Callout & Testimonials */
     .estimate-callout-banner {
       background: var(--color-grey-dark); color: #ffffff; border-radius: var(--radius-lg);
       padding: clamp(2.5rem, 5vw, 4rem); margin-top: 4rem; display: flex; justify-content: space-between;
@@ -504,8 +498,6 @@
     }
     .estimate-callout-banner h3 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin-bottom: 0.5rem; }
     .estimate-callout-banner p { color: #cbd5e1; font-size: 0.95rem; max-width: 600px; }
-
-    /* ================= CLIENT TESTIMONIALS ================= */
     .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.8rem; margin-top: 3.5rem; }
     .testimonial-card {
       background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg);
@@ -515,7 +507,7 @@
     .testimonial-author { display: flex; align-items: center; gap: 0.9rem; }
     .author-avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--bg-surface-elevated); display: flex; align-items: center; justify-content: center; font-weight: 800; font-family: var(--font-display); }
 
-    /* ================= DEDICATED FAQS ================= */
+    /* FAQs */
     .faq-container { max-width: 860px; margin: 3rem auto 0; display: flex; flex-direction: column; gap: 1.1rem; }
     .faq-item { background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); overflow: hidden; transition: var(--transition); box-shadow: var(--shadow-sm); }
     .faq-item:hover { border-color: var(--border-strong); }
@@ -528,7 +520,7 @@
     .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; color: var(--text-muted); font-size: 0.92rem; line-height: 1.8; padding: 0 1.8rem; }
     .faq-item.open .faq-answer { padding-bottom: 1.5rem; }
 
-    /* ================= CONTACT SECTION ================= */
+    /* Contact Section */
     .contact-card {
       background: var(--bg-surface); border: 1px solid var(--border-strong); border-radius: var(--radius-lg);
       display: grid; grid-template-columns: 1.2fr 1.1fr; padding: clamp(2.5rem, 5vw, 4.5rem); gap: 3.5rem; box-shadow: var(--shadow-md);
@@ -555,7 +547,7 @@
     .form-group input:focus, .form-group textarea:focus { border-color: var(--text-main); }
     .btn-block { width: 100%; justify-content: center; margin-top: 0.5rem; }
 
-    /* Lightbox Modal */
+    /* Modal */
     .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 10000; }
     .modal.open { display: block; }
     .modal-backdrop { position: absolute; width: 100%; height: 100%; background: rgba(16, 18, 21, 0.88); backdrop-filter: blur(10px); }
@@ -608,7 +600,7 @@
 </head>
 <body>
 
-  <!-- Top Scroll Reading Progress Indicator -->
+  <!-- Reading Progress Bar -->
   <div id="scrollProgressBar"></div>
 
   <!-- Saubhagya Ghar-Style Capsule Navbar -->
@@ -666,7 +658,7 @@
     </div>
   </header>
 
-  <!-- ================= SAUBHAGYA GHAR "CHOOSE YOUR PATH" SECTION ================= -->
+  <!-- ================= CHOOSE YOUR PATH ================= -->
   <section class="section" style="background: var(--bg-surface-elevated); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
     <div class="container">
       <div class="section-header text-center">
@@ -717,7 +709,6 @@
 
       <!-- DYNAMIC PACKAGES CONTAINER (SYNCED WITH GOOGLE SHEET 'Packages' TAB) -->
       <div class="packages-grid" id="packagesContainer">
-        <!-- Package 1 -->
         <div class="package-card">
           <div>
             <span class="tag-badge" style="margin-bottom:0.5rem;"><span class="dot"></span> Basic Tier</span>
@@ -734,7 +725,6 @@
           <a href="https://wa.me/9779703881733?text=Hi%20Scale%20and%20Spaces,%20I%20want%20to%20request%20the%20Estimation%20Only%20Package%20(Rs.1500)." target="_blank" class="btn btn-outline">Request Package</a>
         </div>
 
-        <!-- Package 2 (Popular) -->
         <div class="package-card popular">
           <div class="package-badge">Most Popular</div>
           <div>
@@ -753,7 +743,6 @@
           <a href="https://wa.me/9779703881733?text=Hi%20Scale%20and%20Spaces,%20I%20want%20the%202D%20Plan%20Package%20(Rs.2500)." target="_blank" class="btn btn-primary">Request Package</a>
         </div>
 
-        <!-- Package 3 -->
         <div class="package-card">
           <div>
             <span class="tag-badge" style="margin-bottom:0.5rem;"><span class="dot"></span> Full Luxury</span>
@@ -872,7 +861,7 @@
     </div>
   </section>
 
-  <!-- ================= DEDICATED TEAM SECTION (DYNAMIC ROWS) ================= -->
+  <!-- ================= DEDICATED TEAM (SMART SCANNING) ================= -->
   <section class="section" id="team" style="background: var(--bg-surface-elevated); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
     <div class="container">
       <div class="section-header text-center">
@@ -1219,7 +1208,6 @@
       </div>
       <div class="slider-viewport" id="sliderViewport">
         <div class="slider-track" id="sliderTrack">
-          <!-- Fallback Cards (Replaced dynamically by 'Portfolio' tab) -->
           <article class="slider-card" onclick="openModal('Community Hospital Design', 'Healthcare Architecture', 'Modern healthcare infrastructure design balancing sterile zoning and emergency flow.', 'https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg')">
             <div class="slide-img-box"><img src="https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg" alt="Hospital" loading="lazy" /></div>
             <div class="slide-desc"><span class="slide-tag">HEALTHCARE</span><div class="item-title">Community Hospital Design</div><p>Sterile zoning &amp; recovery suites.</p></div>
@@ -1321,7 +1309,7 @@
     </div>
   </section>
 
-  <!-- ================= DEDICATED FAQS SECTION (DYNAMIC ACCORDION) ================= -->
+  <!-- ================= DEDICATED FAQS SECTION ================= -->
   <section class="section" id="faq">
     <div class="container">
       <div class="section-header text-center">
@@ -1342,7 +1330,7 @@
     </div>
   </section>
 
-  <!-- ================= CONTACT SECTION (DUAL ROUTE FORM) ================= -->
+  <!-- ================= CONTACT SECTION ================= -->
   <section class="section contact-section" id="contact">
     <div class="container">
       <div class="contact-card">
@@ -1765,7 +1753,7 @@
       document.getElementById('septicBreakdown').textContent = `Liquid Volume: ~${Math.round(u * 300)} Liters`;
     }
 
-    // ================= RESILIENT GOOGLE SHEETS LIVE SYNC =================
+    // ================= RESILIENT MULTI-TAB & COLUMN RESOLVER =================
     function fetchSheetJSONP(sheetId, tabName) {
       return new Promise((resolve) => {
         const callbackName = 'gvizCallback_' + Math.floor(Math.random() * 1000000);
@@ -1797,10 +1785,19 @@
       }
     }
 
+    // Smart Multi-Alias Tab Loader
+    async function fetchTabWithAliases(sheetId, aliases) {
+      for (const name of aliases) {
+        const rows = await fetchGoogleTab(sheetId, name);
+        if (rows && rows.length > 0) return { name, rows };
+      }
+      return { name: aliases[0], rows: [] };
+    }
+
     async function loadGoogleSheetLiveSync(sheetId) {
-      // 0. Dynamic Packages Sync (from 'Packages' Tab)
+      // 0. Packages Sync
       try {
-        const pkgRows = await fetchGoogleTab(sheetId, 'Packages');
+        const { rows: pkgRows } = await fetchTabWithAliases(sheetId, ['Packages', 'packages', 'Package', 'Pricing']);
         if (pkgRows && pkgRows.length > 0) {
           const valid = pkgRows.filter((r, idx) => {
             if (idx === 0 && /^(tier|package|name)/i.test(String(r[0] || r[1]).trim())) return false;
@@ -1816,32 +1813,30 @@
               const features = (row[4] || '').split(',').map(f => f.trim()).filter(Boolean);
               const isPopular = String(row[5] || '').toLowerCase().includes('yes');
 
-              const featureListHtml = features.map(f => `<li><i class="fa-solid fa-check"></i> ${f}</li>`).join('');
-              const popularBadgeHtml = isPopular ? `<div class="package-badge">Most Popular</div>` : '';
-
               return `
                 <div class="package-card ${isPopular ? 'popular' : ''}">
-                  ${popularBadgeHtml}
+                  ${isPopular ? '<div class="package-badge">Most Popular</div>' : ''}
                   <div>
                     <span class="tag-badge" style="margin-bottom:0.5rem;"><span class="dot"></span> ${badge}</span>
                     <h3>${name}</h3>
                     <div class="package-price">${price}</div>
                     <p style="font-size:0.88rem; color:var(--text-muted);">${desc}</p>
                     <ul class="package-features">
-                      ${featureListHtml}
+                      ${features.map(f => `<li><i class="fa-solid fa-check"></i> ${f}</li>`).join('')}
                     </ul>
                   </div>
                   <a href="https://wa.me/9779703881733?text=Hi%20Scale%20and%20Spaces,%20I%20am%20interested%20in%20the%20${encodeURIComponent(name)}%20(${encodeURIComponent(price)})." target="_blank" class="btn ${isPopular ? 'btn-primary' : 'btn-outline'}">Request Package</a>
                 </div>
               `;
             }).join('');
+            console.log("✅ Packages synced from Google Sheet:", valid.length, "tiers");
           }
         }
       } catch (e) {}
 
       // 1. Hero & SEO Meta
       try {
-        const heroRows = await fetchGoogleTab(sheetId, 'Hero');
+        const { rows: heroRows } = await fetchTabWithAliases(sheetId, ['Hero', 'hero', 'Home', 'SEO']);
         if (heroRows && heroRows.length > 0) {
           const map = {};
           heroRows.forEach(row => { if (row[0]) map[String(row[0]).trim()] = String(row[1] || '').trim(); });
@@ -1850,7 +1845,7 @@
           if (map['Paragraph']) document.getElementById('heroDesc').innerHTML = map['Paragraph'].replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
           if (map['Btn1_Text']) {
             const b1 = document.getElementById('heroBtn1');
-            if (b1) { b1.innerHTML = `${map['Btn1_Text']} <i class="fa-solid fa-arrow-right"></i>`; if (map['Btn1_Link']) b1.href = map['Btn1_Link']; }
+            if (b1) { b1.innerHTML = `${map['Btn1_Text']} <i class="fa-solid fa-calendar-check"></i>`; if (map['Btn1_Link']) b1.href = map['Btn1_Link']; }
           }
           if (map['Btn2_Text']) {
             const b2 = document.getElementById('heroBtn2');
@@ -1866,7 +1861,7 @@
 
       // 2. About Tab
       try {
-        const ab = await fetchGoogleTab(sheetId, 'About');
+        const { rows: ab } = await fetchTabWithAliases(sheetId, ['About', 'about', 'Philosophy', 'Firm']);
         if (ab && ab.length > 0) {
           const map = {};
           ab.forEach(row => { if (row[0]) map[String(row[0]).trim()] = String(row[1] || '').trim(); });
@@ -1881,66 +1876,82 @@
           if (map['Stat3_Num']) document.getElementById('aboutStat3Num').textContent = map['Stat3_Num'];
           if (map['Stat3_Label']) document.getElementById('aboutStat3Label').textContent = map['Stat3_Label'];
           if (map['Languages']) document.getElementById('aboutLanguages').textContent = map['Languages'];
-          if (map['Skills']) {
-            const skills = map['Skills'].split(',').map(s => s.trim());
-            const cluster = document.getElementById('aboutSkillsCluster');
-            if (skills.length > 0 && cluster) {
-              cluster.innerHTML = skills.map(sk => {
-                const parts = sk.split(':');
-                return `<div class="skill-tag"><i class="fa-solid fa-cube"></i> ${parts[0] ? parts[0].trim() : sk} <span>${parts[1] ? parts[1].trim() : ''}</span></div>`;
-              }).join('');
-            }
-          }
         }
       } catch (e) {}
 
-      // 3. Dedicated Team Tab
+      // 3. Dedicated Team Tab (Smart S.N. & Shift Detector)
       try {
-        const t = await fetchGoogleTab(sheetId, 'Team');
+        const { rows: t } = await fetchTabWithAliases(sheetId, ['Team', 'team', 'Teams', 'teams', 'Our Team', 'Members']);
         if (t && t.length > 0) {
+          // Detect if Column A is S.N. (1, 2, 3...)
+          let offset = 0;
+          const firstRow = t[0] || [];
+          if (/^(sn|s\.n|no|id)/i.test(String(firstRow[0]).trim()) || (!isNaN(firstRow[0]) && firstRow[0] !== '')) {
+            offset = 1; // Shift by 1 column
+          }
+
           const valid = t.filter((r, idx) => {
-            if (idx === 0 && /^(name|member|title)/i.test(String(r[0]).trim())) return false;
-            return r[0] && String(r[0]).trim() !== '';
+            if (idx === 0 && /^(name|member|sn|s\.n|role)/i.test(String(r[offset] || r[0]).trim())) return false;
+            return (r[offset] || r[0]) && String(r[offset] || r[0]).trim() !== '';
           });
+
           if (valid.length > 0) {
-            document.getElementById('teamContainer').innerHTML = valid.map(([name, role, photo, bio]) => `
-              <div class="team-card">
-                <img src="${formatImageUrl(photo) || 'https://i.postimg.cc/05wwzfcw/Profile-Pic.png'}" alt="${name}" class="team-avatar" />
-                <div class="team-name">${name}</div>
-                <div class="team-role">${role || 'Associate'}</div>
-                <p class="team-bio">${bio || ''}</p>
-              </div>
-            `).join('');
+            document.getElementById('teamContainer').innerHTML = valid.map(r => {
+              const name = r[offset] || r[0];
+              const role = r[offset + 1] || r[1] || 'Associate';
+              const photo = r[offset + 2] || r[2];
+              const bio = r[offset + 3] || r[3] || '';
+              return `
+                <div class="team-card">
+                  <img src="${formatImageUrl(photo) || 'https://i.postimg.cc/05wwzfcw/Profile-Pic.png'}" alt="${name}" class="team-avatar" />
+                  <div class="team-name">${name}</div>
+                  <div class="team-role">${role}</div>
+                  <p class="team-bio">${bio}</p>
+                </div>
+              `;
+            }).join('');
+            console.log("✅ Synced Team Tab:", valid.length, "members");
           }
         }
-      } catch (e) {}
+      } catch (e) {
+        console.warn("Team tab using local fallback");
+      }
 
       // 4. Dedicated FAQs Tab
       try {
-        const f = await fetchGoogleTab(sheetId, 'FAQs');
+        const { rows: f } = await fetchTabWithAliases(sheetId, ['FAQs', 'FAQ', 'faq', 'faqs', 'Questions']);
         if (f && f.length > 0) {
+          let qOffset = 0;
+          if (/^(sn|s\.n|no|id)/i.test(String(f[0][0]).trim())) qOffset = 1;
+
           const validFaqs = f.filter((r, idx) => {
-            if (idx === 0 && /^(question|faq|q)/i.test(String(r[0]).trim())) return false;
-            return r[0] && String(r[0]).trim() !== '';
+            if (idx === 0 && /^(question|faq|q|sn)/i.test(String(r[qOffset] || r[0]).trim())) return false;
+            return (r[qOffset] || r[0]) && String(r[qOffset] || r[0]).trim() !== '';
           });
+
           if (validFaqs.length > 0) {
-            document.getElementById('faqContainer').innerHTML = validFaqs.map(([q, a], idx) => `
-              <div class="faq-item ${idx === 0 ? 'open' : ''}">
-                <div class="faq-question"><span>${q}</span><i class="fa-solid fa-chevron-down"></i></div>
-                <div class="faq-answer"><p>${a || 'Details updating shortly.'}</p></div>
-              </div>
-            `).join('');
+            document.getElementById('faqContainer').innerHTML = validFaqs.map((r, idx) => {
+              const q = r[qOffset] || r[0];
+              const a = r[qOffset + 1] || r[1] || '';
+              return `
+                <div class="faq-item ${idx === 0 ? 'open' : ''}">
+                  <div class="faq-question"><span>${q}</span><i class="fa-solid fa-chevron-down"></i></div>
+                  <div class="faq-answer"><p>${a}</p></div>
+                </div>
+              `;
+            }).join('');
             bindFaqAccordion();
+            console.log("✅ Synced FAQs Tab:", validFaqs.length, "questions");
           }
         }
       } catch (e) {}
 
       // 5. Rates Tab
       try {
-        const r = await fetchGoogleTab(sheetId, 'Rates');
+        const { rows: r } = await fetchTabWithAliases(sheetId, ['Rates', 'rates', 'Material Rates']);
         if (r && r.length > 0) {
           const v = r.filter((row, idx) => {
-            if (idx === 0 && /^(item|material)/i.test(String(row[0]).trim())) return false;
+            if (idx === 0 && /^(item|material|sn)/i.test(String(row[0]).trim())) return false;
             return row[0] && String(row[0]).trim() !== '';
           });
           if (v.length > 0) {
@@ -1951,10 +1962,10 @@
 
       // 6. Articles Tab
       try {
-        const a = await fetchGoogleTab(sheetId, 'Articles');
+        const { rows: a } = await fetchTabWithAliases(sheetId, ['Articles', 'articles', 'Journal', 'Blog']);
         if (a && a.length > 0) {
           const v = a.filter((row, idx) => {
-            if (idx === 0 && /^(title|article)/i.test(String(row[0]).trim())) return false;
+            if (idx === 0 && /^(title|article|sn)/i.test(String(row[0]).trim())) return false;
             return row[0] && String(row[0]).trim() !== '';
           });
           if (v.length > 0) {
@@ -1965,10 +1976,10 @@
 
       // 7. Showcase Tab
       try {
-        const s = await fetchGoogleTab(sheetId, 'Showcase');
+        const { rows: s } = await fetchTabWithAliases(sheetId, ['Showcase', 'showcase', '360 VR', 'Live Works']);
         if (s && s.length > 0) {
           const v = s.filter((row, idx) => {
-            if (idx === 0 && /^(title|project)/i.test(String(row[0]).trim())) return false;
+            if (idx === 0 && /^(title|project|sn)/i.test(String(row[0]).trim())) return false;
             return row[0] && String(row[0]).trim() !== '';
           });
           if (v.length > 0) {
@@ -1985,10 +1996,10 @@
 
       // 8. Portfolio Tab
       try {
-        const p = await fetchGoogleTab(sheetId, 'Portfolio');
+        const { rows: p } = await fetchTabWithAliases(sheetId, ['Portfolio', 'portfolio', 'Works', 'works', 'Projects']);
         if (p && p.length > 0) {
           const v = p.filter((row, idx) => {
-            if (idx === 0 && /^(title|design)/i.test(String(row[0]).trim())) return false;
+            if (idx === 0 && /^(title|design|sn)/i.test(String(row[0]).trim())) return false;
             return row[0] && String(row[0]).trim() !== '';
           });
           if (v.length > 0) {
@@ -2003,12 +2014,12 @@
         }
       } catch (e) {}
 
-      // 9. Posts Tab
+      // 9. Posts Tab (Reel)
       try {
-        const po = await fetchGoogleTab(sheetId, 'Posts');
+        const { rows: po } = await fetchTabWithAliases(sheetId, ['Posts', 'posts', 'Reel', 'Gallery']);
         if (po && po.length > 0) {
           const v = po.filter((row, idx) => {
-            if (idx === 0 && /^(title|post)/i.test(String(row[0]).trim())) return false;
+            if (idx === 0 && /^(title|post|sn)/i.test(String(row[0]).trim())) return false;
             return (row[0] || row[1]) && String(row[4]||'Active').toLowerCase() !== 'inactive';
           });
           if (v.length > 0) {
@@ -2020,10 +2031,10 @@
 
       // 10. Downloads Tab
       try {
-        const d = await fetchGoogleTab(sheetId, 'Downloads');
+        const { rows: d } = await fetchTabWithAliases(sheetId, ['Downloads', 'downloads', 'Download', 'Files']);
         if (d && d.length > 0) {
           const v = d.filter((row, idx) => {
-            if (idx === 0 && /^(title|file)/i.test(String(row[0]).trim())) return false;
+            if (idx === 0 && /^(title|file|sn)/i.test(String(row[0]).trim())) return false;
             return row[0] && row[2];
           });
           if (v.length > 0) {
@@ -2050,4 +2061,3 @@
   </script>
 </body>
 </html>
-```
